@@ -1,0 +1,130 @@
+/* COMMON */
+h1, h2, h3, h4 {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+}
+.hide {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+}
+
+header h1 {
+  width: 150px;
+}
+
+header h1 img {
+  width: 100%;
+}
+
+header .header__menu {
+  display: flex;
+}
+
+header .header__menu li a:hover {
+  color: #01579b;
+}
+
+header .header__menu li a {
+  display: block;
+  padding: 0 35px;
+  font-size: 17px;
+}
+
+header .header__submenu {
+  display: flex;
+}
+
+header .header__submenu li {
+  position: relative;
+}
+
+header .header__submenu li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 7px;
+  background-color: #bdbdbd;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+header .header__submenu li:first-child::after {
+  display: none;
+}
+
+header .header__submenu li a {
+  display: block;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+/* MAIN */
+
+#main .main__photo {
+  height: 640px;
+  background-image: url("../images/bg_main01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#main .main__photo > div {
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  color: #fff;
+}
+
+#main .main__photo .title {
+  font-size: 30px;
+  line-height: 1.4;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#main .main__photo .text {
+  font-size: 20px;
+}
+
+#main .material {
+  display: flex;
+  justify-content: space-around;
+  padding: 46px 0 41px;
+}
+
+#main .material li {
+  text-align: center;
+}
+
+#main .material li img {
+  width: 70px;
+}
+
+#main .material li span {
+  line-height: 2em;
+}
