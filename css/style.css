@@ -1,7 +1,12 @@
+body {
+  min-width: 1200px;
+}
+
 /* HEADER */
 header {
   text-align: center;
   height: 81px;
+  position: relative;
 }
 
 header h1 {
@@ -91,4 +96,126 @@ header .spot ul li a {
 
 header .spot ul li:last-child a {
   padding-right: 0;
+}
+
+/* VISUAL */
+.visual {
+  padding: 0 50px;
+  position: relative;
+}
+
+.visual .prev,
+.visual .next {
+  width: 25px;
+  height: 47px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../images/sp_com.png") no-repeat;
+  color: transparent;
+}
+
+.visual .prev {
+  left: 82px;
+  background-position: -128px -60px;
+}
+
+.visual .next {
+  right: 82px;
+  background-position: -158px -60px;
+}
+
+.visual .control {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  text-align: center; 
+}
+
+.visual .control a {
+  color: transparent;
+}
+
+.visual .control > div {
+  display: inline-block;
+  position: relative;
+  padding-right: 45px;
+  
+}
+
+.visual .control > div > div {
+  position: absolute;
+  right: 0;
+}
+
+.visual .control > div > div a {
+  overflow: hidden;
+  display: inline-block;
+  width: 8px;
+  height: 9px;
+  background: url("../images/sp_com.png") no-repeat;
+  margin-left: 7px;
+  opacity: .5;
+}
+
+.visual .control > div > div a.on {
+  opacity: 1;
+}
+
+.visual .control > div > div a.play {
+  background-position: -108px -72px;
+}
+
+
+.visual .control > div > div a.pause {
+  background-position: -108px -60px;
+}
+
+.visual .control ul {
+  font-size: 0;
+  position: relative;
+  top: -7px;
+  display: inline-block;
+}
+
+.visual .control li {
+  display: inline-block;
+  padding: 0 3px;
+}
+
+.visual .control li.on a {
+  background-color: #fff;
+}
+
+.visual .control li a {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: rgba(255,255,255,0.5);
+  border: none;
+}
+
+.visual .con > div {
+  height: 640px;
+}
+
+.visual .con .slide {
+  background: url("../images/bg_main01.jpg") no-repeat center;
+  color: #fff;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.visual .con .slide .txt {
+  position: absolute;
+  left: 50%;
+  top: 175px;
+}
+
+.visual .con .slide p {
+  font-size: 20px;
+  padding-top: 19px;
+  line-height: 100%;
 }
