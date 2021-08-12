@@ -102,6 +102,7 @@ header .header__submenu li a {
   background-position: center;
   background-size: cover;
   position: relative;
+  /* background-attachment: fixed; */
 }
 
 #main .main__photo > div {
@@ -167,6 +168,7 @@ header .header__submenu li a {
 
 #magazine .introduce {
   display: flex;
+  justify-content: space-between;
 }
 
 #magazine .introduce__left {
@@ -177,6 +179,7 @@ header .header__submenu li a {
   background-position: center;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 #magazine .introduce__left > div {
@@ -216,7 +219,7 @@ header .header__submenu li a {
 }
 
 #magazine .introduce__right {
-  max-width: 340px;
+  /* max-width: 340px; */
   flex-basis: 30%;
   background-color: #fafafa;
   padding: 20px 20px 0;
@@ -312,15 +315,13 @@ header .header__submenu li a {
 }
 
 #notice-and-news .left .gallery-and-blog img {
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
-#notice-and-news .left .gallery {
-  position: relative;
-}
-
+#notice-and-news .left .gallery,
 #notice-and-news .left .blog {
   position: relative;
+  padding-right: 20px;
 }
 
 #notice-and-news .left .blog span {
@@ -359,9 +360,6 @@ header .header__submenu li a {
 
 #notice-and-news .right .find__branch {
   position: relative;
-}
-
-#notice-and-news .right .find__branch img {
   padding-right: 20px;
 }
 
@@ -454,12 +452,17 @@ header .header__submenu li a {
 }
 
 /* OTHERS */
-#others .inner {
-  padding: 55px 0;
+#others {
   background-image: url("../images/bg_main_business.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+#others .inner {
+  padding: 55px 0;
+
 }
 
 #others ul {
@@ -501,8 +504,7 @@ footer,
 }
 
 .footer__top {
-  background-color: #383F43;
-  
+  background-color: #383F43; 
 }
 
 .footer__top .inner {
