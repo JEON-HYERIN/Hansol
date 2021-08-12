@@ -1,4 +1,8 @@
 /* COMMON */
+* {
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4 {
   font-size: 1em;
   font-weight: 400;
@@ -19,6 +23,14 @@ h1, h2, h3, h4 {
 }
 
 img {
+  display: block;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   display: block;
 }
 
@@ -127,4 +139,105 @@ header .header__submenu li a {
 
 #main .material li span {
   line-height: 2em;
+}
+
+#magazine {
+  background-color: #DFD9D1;
+}
+
+#magazine .inner {
+  height: 670px;
+}
+
+#magazine h3.title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 50px 0 16px;
+}
+
+#magazine p.text {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+#magazine h3.title,
+#magazine p.text {
+  text-align: center;
+}
+
+#magazine .introduce {
+  display: flex;
+}
+
+#magazine .introduce__left {
+  flex-basis: 70%;
+  max-width: 800px;
+  background-image: url("../images/img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#magazine .introduce__left > div {
+  width: 200px;
+  height: 428px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  color: #fafafa;
+  padding: 47px 20px 0;
+}
+
+#magazine .introduce__left > div > h4 {
+  font-size: 20px;
+  line-height: 34px;
+  padding-bottom: 9px;
+}
+
+#magazine .introduce__left > div > h4 > span {
+  font-weight: 700;
+}
+
+#magazine .introduce__left > div .btn {
+  width: 160px;
+  height: 45px;
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  font-size: 16px;
+  position: absolute;
+  bottom: 40px;
+}
+
+#magazine .introduce__left > div p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#magazine .introduce__right {
+  max-width: 340px;
+  flex-basis: 30%;
+  background-color: #fafafa;
+  padding: 20px 20px 0;
+}
+
+#magazine .introduce__right .wood {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+#magazine .introduce__right .wood .wood__img {
+  margin-right: 20px;
+}
+
+#magazine .introduce__right .wood .text h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+#magazine .introduce__right .wood .text p {
+  font-size: 16px;
 }
