@@ -95,7 +95,6 @@ header .header__submenu li a {
 }
 
 /* MAIN */
-
 #main .main__photo {
   height: 640px;
   background-image: url("../images/bg_main01.jpg");
@@ -141,6 +140,7 @@ header .header__submenu li a {
   line-height: 2em;
 }
 
+/* MAGAZINE */
 #magazine {
   background-color: #DFD9D1;
 }
@@ -241,3 +241,215 @@ header .header__submenu li a {
 #magazine .introduce__right .wood .text p {
   font-size: 16px;
 }
+
+/* NOTICE-AND-NEWS */
+#notice-and-news {
+  padding-bottom: 100px;
+}
+
+#notice-and-news .inner {
+  display: flex;
+  text-align: center;
+  padding: 55px 0;
+}
+
+#notice-and-news a {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color :#fafafa;
+}
+
+#notice-and-news a:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+#notice-and-news a:hover span:last-of-type {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+#notice-and-news a > span {
+  display: block;
+  transition: 350ms;
+}
+
+
+#notice-and-news a > span:first-of-type {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#notice-and-news a > span:last-of-type {
+  font-size: 14px;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+#notice-and-news .date {
+  font-size: 12px;
+  color: #727272;
+  display: block;
+  text-align: left;
+}
+
+#notice-and-news .left {
+  flex-basis: 50%;
+}
+
+#notice-and-news .left .gallery-and-blog {
+  display: flex;
+}
+
+#notice-and-news .left .gallery-and-blog,
+#notice-and-news .right .find {
+  padding-bottom: 20px;
+}
+
+#notice-and-news .left .gallery-and-blog img {
+  padding-right: 20px;
+}
+
+#notice-and-news .left .gallery {
+  position: relative;
+}
+
+#notice-and-news .left .blog {
+  position: relative;
+}
+
+#notice-and-news .left .blog span {
+  color: #212121;
+}
+
+#notice-and-news .left .notice {
+  display: flex;
+  flex-direction: column;
+}
+
+#notice-and-news .left .notice .board {
+  display: flex;
+  line-height: 2em;
+}
+
+#notice-and-news .left .notice .board .board__left {
+  border-right: 1px solid #fafafa;
+}
+
+#notice-and-news .left .notice .board .board__left,
+#notice-and-news .left .notice .board .board__right {
+  padding: 35px;
+} 
+
+#notice-and-news .left .notice .board p {
+  width: 220px;
+}
+#notice-and-news .right {
+  flex-basis: 50%; 
+}
+
+#notice-and-news .right .find {
+  display: flex;
+}
+
+#notice-and-news .right .find__branch {
+  position: relative;
+}
+
+#notice-and-news .right .find__branch img {
+  padding-right: 20px;
+}
+
+#notice-and-news .right .find__product {
+  background-color: #F2F0ED;
+  padding: 36px 20px 0;
+  width: 280px;
+  height: 280px;
+}
+
+#notice-and-news .right .find__product .title {
+  font-size: 17px;
+  padding-bottom: 29px;
+  font-weight: 700;
+}
+
+#notice-and-news .right .find__product div.select {
+  padding-bottom: 10px;
+}
+
+#notice-and-news .right .find__product select {
+  display: block;
+  text-indent: 20px;
+  font-size: 13px;
+}
+
+#notice-and-news .right .find__product .btn--green {
+  margin-top: 20px;
+  background-color: #2D5B79;
+  color :#fafafa;
+  font-size: 15px;
+}
+
+#notice-and-news .right .find__product select,
+#notice-and-news .right .find__product input[type="text"],
+#notice-and-news .right .find__product .btn--green {
+  width: 240px;
+  height: 45px;
+}
+
+#notice-and-news .right .news {
+  display: flex;
+  flex-direction: column;
+}
+
+#notice-and-news .left .notice,
+#notice-and-news .right .news {
+  width: 580px;
+  background-color: #F2F0ED;
+  font-size: 16px;
+  color: #212121;
+}
+
+#notice-and-news .right .news .board {
+  padding: 35px;
+}
+
+#notice-and-news .right .news .board > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fafafa;
+}
+
+#notice-and-news .right .news .board > div:last-child {
+  border-bottom: none;
+} 
+
+#notice-and-news .right .news .board > div p {
+  width: 400px;
+  line-height: 2em;
+}
+
+#notice-and-news .left .notice .title,
+#notice-and-news .right .news .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2D5B79;
+  line-height: 77px; 
+  border-bottom: 1px solid #fafafa;
+}
+
+#notice-and-news .left .notice p,
+#notice-and-news .right .news p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-align: left;
+}
+
