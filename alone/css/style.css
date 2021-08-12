@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, small {
   font-size: 1em;
   font-weight: 400;
   line-height: 1em;
@@ -469,6 +469,7 @@ header .header__submenu li a {
 #others ul li {
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 #others ul li:last-child {
@@ -490,5 +491,124 @@ header .header__submenu li a {
 }
 
 #others ul li .textbox p {
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer,
+.footer__top .left li a {
+  color :#fafafa;
+}
+
+.footer__top {
+  background-color: #383F43;
+  
+}
+
+.footer__top .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+}
+
+.footer__top .inner .left {
+  display: flex;
+}
+
+.footer__top .left li {
+  position: relative;
+}
+
+.footer__top .left li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #bdbdbd;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.footer__top .left li:first-child::before {
+  display: none;
+}
+
+.footer__top .left li a {
+  display: block;
+  padding: 0 19px;
+  font-size: 13px;
+}
+
+.footer__top .left li:last-child a {
+  padding-right: 0;
+}
+
+.footer__top .inner .right {
+  display: flex;
+  align-items: center;
+}
+
+.footer__top .inner .right .call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 242px;
+  text-align: center;
+  background-color: #2A3033;
+}
+
+.footer__top .inner .right .call span:first-child {
+  font-size: 13px;
+}
+
+.footer__top .inner .right .call span:last-child  {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.footer__top .inner .right select{
+  display: block;
+  width: 200px;
+  height: 44px;
+  font-size: 12px;
+  padding-left: 21px;
+}
+
+footer .footer__bottom {
+  background-color: #4C5459;
+  padding: 40px 44px;
+}
+
+footer .footer__bottom .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__bottom .logo {
+  width: 131px;
+  height: 51px;
+}
+
+.footer__bottom .logo img {
+  width: 100%;
+}
+
+.footer__bottom .address {
+  display: flex;
+  padding: 32px 0 14px;
+}
+
+.footer__bottom .address li {
+  font-size: 14px;
+  padding: 0 14px;
+}
+
+
+.footer__bottom .right small {
   font-size: 14px;
 }
