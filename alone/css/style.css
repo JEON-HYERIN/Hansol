@@ -453,3 +453,42 @@ header .header__submenu li a {
   text-align: left;
 }
 
+/* OTHERS */
+#others .inner {
+  padding: 55px 0;
+  background-image: url("../images/bg_main_business.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#others ul {
+  display: flex;
+}
+
+#others ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+#others ul li:last-child {
+  margin-right: 0;
+}
+
+#others ul li .textbox {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  text-align: center;
+  color: #212121;
+}
+
+#others ul li .textbox h4 {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+#others ul li .textbox p {
+  font-size: 14px;
+}
